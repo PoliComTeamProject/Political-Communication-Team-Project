@@ -539,9 +539,10 @@ AverageSentimentOverview=AverageSentimentOverview%>%mutate(Difference=(Media-Twi
 ggplot(AverageSentimentOverview, aes(x = Media, y =Twitter )) +
   geom_point() +
   stat_smooth()
-cor(AverageSentimentOverview$Twitter, AveragesData$Media)
-
+cor.test(AverageSentimentOverview$Twitter, AverageSentimentOverview$Media)
+?cor.test
  #correlation = 0.4800105 meaning that there is a relatively weak positive linear correlation between the two variables 
+#p-value = 0.2287
 
 model <- lm(Twitter ~ Media, data = AverageSentimentOverview)
 model
