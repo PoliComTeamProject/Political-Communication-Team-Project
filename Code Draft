@@ -16,6 +16,7 @@ library(ggpubr)
 library(academictwitteR)
 library(qdapDictionaries)
 
+#Start by importing the csv files into the environment. The instructions for how they should be named are on the front page of the report
 
 # Retrieving the data for the newspaper analysis, naming them and dividing them into weeks--------------------------
 #Headlines FOX has the headlines from FOX News from the 22nd of January 2021 until the 19th of March 2021
