@@ -68,7 +68,7 @@ week8HP=HP%>%filter(id %in% 1877995431:1882114657)
 # Retreiving the data for the tweets and dividing them into 8 weeks --------------------------------------
 
 #Week 1
-Tweetsweek1 <-
+TweetsWeek1 <-
   get_all_tweets(
     query = "#climate", 
     start_tweets = "2021-01-22T00:00:00Z",
